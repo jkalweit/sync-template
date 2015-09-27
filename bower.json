@@ -1,0 +1,20 @@
+{
+  "name": "jqm",
+  "version": "0.0.0",
+  "authors": [
+    "Justin Kalweit <kalweit@alumni.duke.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "doT": "~1.0.1",
+    "jquery-mobile-bower": "~1.4.5",
+    "react": "~0.13.3"
+  }
+}

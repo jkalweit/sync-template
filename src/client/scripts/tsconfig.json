@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"noImplicitAny": true,
+		"target": "es5",
+		"sourceMap": true,
+		"outDir": "../../../built/client/scripts/",
+		"jsx": "react"
+	},
+	"files": [
+		"SyncNode.ts",
+		"SyncNodeSocket.ts",
+		"Utils.ts",
+		"BaseViews.tsx",
+		"Views.tsx"
+		]
+}

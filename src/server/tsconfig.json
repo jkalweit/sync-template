@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"outDir": "../../built/server/"
+	},
+	"filesGlob": [
+		"./*.ts"
+		],
+	"files": [
+		"./Persistence.ts",
+	"./SyncNodeServer.ts",
+	"./Server.ts"
+		]
+}
