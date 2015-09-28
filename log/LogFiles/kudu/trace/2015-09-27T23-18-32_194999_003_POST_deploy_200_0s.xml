@@ -1,4 +1,0 @@
-<step title="Incoming Request" date="2015-09-27T23:18:32.546" instance="194999" url="/deploy?scmType=GitHub" method="POST" type="request" pid="4276,2,8" Connection="Keep-Alive" Content-Length="8867" Content-Type="application/x-www-form-urlencoded" Accept="*/*" Host="synctodo.scm.azurewebsites.net" User-Agent="GitHub-Hookshot/9db916b" X-GitHub-Event="ping" X-GitHub-Delivery="10f57d80-656e-11e5-95dc-e3f9fcb100e7" X-SITE-DEPLOYMENT-ID="synctodo" >
-  <step title="FetchHandler" date="2015-09-27T23:18:32.640" /><!-- duration: 370ms -->
-  <step title="Outgoing response" date="2015-09-27T23:18:33.026" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" Cache-Control="private" X-AspNet-Version="4.0.30319" /><!-- duration: 0ms -->
-</step><!-- duration: 495ms -->

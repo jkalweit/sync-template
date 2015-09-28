@@ -1,3 +1,0 @@
-<step title="Incoming Request" date="2015-09-27T23:18:46.319" instance="194999" url="/api/settings/ScmType" method="GET" type="request" pid="6316,2,7" Connection="Keep-Alive" Host="synctodo.scm.azurewebsites.net" User-Agent="Azure-WebSites-Controller/48.0.8598.1367" x-ms-request-id="1879d2a7-dc44-43ac-906f-240c62bc17ab" X-SITE-DEPLOYMENT-ID="synctodo" >
-  <step title="Outgoing response" date="2015-09-27T23:18:46.397" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" x-ms-request-id="1879d2a7-dc44-43ac-906f-240c62bc17ab" Cache-Control="private" X-AspNet-Version="4.0.30319" Content-Type="application/json; charset=utf-8" /><!-- duration: 0ms -->
-</step><!-- duration: 94ms -->

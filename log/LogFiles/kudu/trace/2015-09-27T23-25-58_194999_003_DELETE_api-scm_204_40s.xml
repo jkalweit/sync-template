@@ -1,9 +1,0 @@
-<step title="Incoming Request" date="2015-09-27T23:25:58.588" instance="194999" url="/api/scm" method="DELETE" type="request" pid="4112,2,8" Connection="Keep-Alive" Host="synctodo.scm.azurewebsites.net" User-Agent="Azure-WebSites-Controller/48.0.8598.1367" x-ms-request-id="f74954aa-a670-4edf-b81a-bfa6998882c0" X-SITE-DEPLOYMENT-ID="synctodo" >
-  <step title="Assuming git repository at D:\home\site\repository" date="2015-09-27T23:25:58.682" /><!-- duration: 16ms -->
-  <step title="Deleting repository" date="2015-09-27T23:25:58.749" /><!-- duration: 39488ms -->
-  <step title="Delete auto swap lock file" date="2015-09-27T23:26:38.252" /><!-- duration: 16ms -->
-  <step title="Deleting ssh key" date="2015-09-27T23:26:38.268" /><!-- duration: 16ms -->
-  <step title="Updating initial deployment manifest" date="2015-09-27T23:26:38.284" /><!-- duration: 31ms -->
-  <step title="Deleting deployment cache" date="2015-09-27T23:26:38.331" /><!-- duration: 175ms -->
-  <step title="Outgoing response" date="2015-09-27T23:26:38.521" type="response" statusCode="204" statusText="No Content" Server="Microsoft-IIS/8.0" x-ms-request-id="f74954aa-a670-4edf-b81a-bfa6998882c0" Cache-Control="private" X-AspNet-Version="4.0.30319" /><!-- duration: 0ms -->
-</step><!-- duration: 39948ms -->
