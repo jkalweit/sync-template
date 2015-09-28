@@ -1,0 +1,32 @@
+<step title="Incoming Request" date="2015-09-27T23:18:46.475" instance="194999" url="/deploy?scmType=GitHub" method="POST" type="request" pid="6316,2,6" Connection="Keep-Alive" Content-Length="85" Expect="100-continue" Host="synctodo.scm.azurewebsites.net" User-Agent="Azure-WebSites-Controller/48.0.8598.1367" x-ms-request-id="1879d2a7-dc44-43ac-906f-240c62bc17ab" X-SITE-DEPLOYMENT-ID="synctodo" >
+  <step title="FetchHandler" date="2015-09-27T23:18:46.491" >
+    <step title="Attempting to fetch target branch master" date="2015-09-27T23:18:46.584" /><!-- duration: 16ms -->
+    <step title="Performing fetch based deployment" date="2015-09-27T23:18:46.631" >
+      <step title="Creating temporary deployment" date="2015-09-27T23:18:46.647" /><!-- duration: 47ms -->
+      <step title="LibGit2SharpRepository Initialize" date="2015-09-27T23:18:46.830" >
+        <step title="Configure git server" date="2015-09-27T23:18:47.376" /><!-- duration: 38ms -->
+        <step title="Create deny users for .git folder" date="2015-09-27T23:18:47.414" /><!-- duration: 0ms -->
+        <step title="Configure git-credential" date="2015-09-27T23:18:47.414" /><!-- duration: 33ms -->
+        <step title="Setup post receive hook" date="2015-09-27T23:18:47.463" /><!-- duration: 16ms -->
+      </step><!-- duration: 632ms -->
+      <step title="DeploymentManager.Deploy(id)" date="2015-09-27T23:19:26.106" >
+        <step title="Collecting changeset information" date="2015-09-27T23:19:26.121" /><!-- duration: 47ms -->
+        <step title="Updating submodules" date="2015-09-27T23:19:26.168" /><!-- duration: 64ms -->
+        <step title="Determining deployment builder" date="2015-09-27T23:19:26.342" >
+          <step title="Builder is NodeSiteBuilder" date="2015-09-27T23:19:27.624" /><!-- duration: 0ms -->
+        </step><!-- duration: 1282ms -->
+        <step title="Copying SSH keys" date="2015-09-27T23:19:27.656" /><!-- duration: 16ms -->
+        <step title="Building" date="2015-09-27T23:19:27.672" >
+          <step title="Generating deployment script" date="2015-09-27T23:19:27.736" >
+            <step title="Executing external process" date="2015-09-27T23:19:27.861" type="process" path="starter.cmd" arguments="&quot;C:\Program Files (x86)\SiteExtensions\Kudu\48.40922.1823\bin\node_modules\.bin\kuduscript.cmd&quot; -y --no-dot-deployment -r &quot;D:\home\site\repository&quot; -o &quot;D:\home\site\deployments\tools&quot; --node --sitePath &quot;D:\home\site\repository&quot;" /><!-- duration: 12203ms -->
+            <step title="Saved cached version of the deployment script for command -y --no-dot-deployment -r &quot;D:\home\site\repository&quot; -o &quot;D:\home\site\deployments\tools&quot; --node --sitePath &quot;D:\home\site\repository&quot;" date="2015-09-27T23:19:40.080" /><!-- duration: 0ms -->
+          </step><!-- duration: 12344ms -->
+          <step title="Executing external process" date="2015-09-27T23:19:40.205" type="process" path="starter.cmd" arguments="&quot;D:\home\site\deployments\tools\deploy.cmd&quot;" /><!-- duration: 55509ms -->
+        </step><!-- duration: 68250ms -->
+      </step><!-- duration: 69816ms -->
+      <step title="Cleaning up temp files" date="2015-09-27T23:20:35.922" /><!-- duration: 0ms -->
+      <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2015-09-27T23:20:35.953" /><!-- duration: 78ms -->
+    </step><!-- duration: 109603ms -->
+  </step><!-- duration: 109759ms -->
+  <step title="Outgoing response" date="2015-09-27T23:20:36.250" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" Cache-Control="private" X-AspNet-Version="4.0.30319" /><!-- duration: 16ms -->
+</step><!-- duration: 109790ms -->

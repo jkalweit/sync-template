@@ -1,0 +1,5 @@
+<step title="Incoming Request" date="2015-09-28T00:34:38.229" instance="194999" url="/logstream" method="GET" type="request" pid="4380,2,22" Connection="Keep-Alive" Content-Length="0" Accept-Charset="UTF-8" Host="synctodo.scm.azurewebsites.net" User-Agent="WindowsAzureXplatCLI/0.9.9" X-SITE-DEPLOYMENT-ID="synctodo" >
+  <step title="LogStreamHandler.BeginProcessRequest" date="2015-09-28T00:34:38.244" /><!-- duration: 156ms -->
+  <step title="LogStreamHandler.EndProcessRequest" date="2015-09-28T00:36:33.287" /><!-- duration: 16ms -->
+  <step title="Outgoing response" date="2015-09-28T00:36:33.319" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" Cache-Control="private" X-AspNet-Version="4.0.30319" Content-Type="text/plain; charset=utf-8" /><!-- duration: 0ms -->
+</step><!-- duration: 115105ms -->

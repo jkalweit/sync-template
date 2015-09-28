@@ -1,0 +1,19 @@
+<step title="Incoming Request" date="2015-09-27T23:31:29.251" instance="194999" url="/synctodo.git/info/refs?service=git-receive-pack" method="GET" type="request" pid="5932,2,14" Connection="Keep-Alive" Pragma="no-cache" Accept="*/*" Accept-Encoding="gzip" Host="synctodo.scm.azurewebsites.net" User-Agent="git/1.9.1" X-SITE-DEPLOYMENT-ID="synctodo" >
+  <step title="InfoRefsService.Execute" date="2015-09-27T23:31:29.314" >
+    <step title="InfoRefsService.SmartInfoRefs" date="2015-09-27T23:31:29.361" >
+      <step title="GitExeServer.Initialize" date="2015-09-27T23:31:29.392" >
+        <step title="LibGit2SharpRepository Initialize" date="2015-09-27T23:31:29.392" >
+          <step title="Configure git server" date="2015-09-27T23:31:29.815" /><!-- duration: 16ms -->
+          <step title="Create deny users for .git folder" date="2015-09-27T23:31:29.831" /><!-- duration: 16ms -->
+          <step title="Configure git-credential" date="2015-09-27T23:31:29.847" /><!-- duration: 31ms -->
+          <step title="Setup post receive hook" date="2015-09-27T23:31:29.878" /><!-- duration: 16ms -->
+        </step><!-- duration: 517ms -->
+      </step><!-- duration: 517ms -->
+      <step title="GitExeServer.AdvertiseReceivePack" date="2015-09-27T23:31:29.925" >
+        <step title="Executing external process" date="2015-09-27T23:31:29.940" type="process" path="git.exe" arguments="receive-pack --stateless-rpc --advertise-refs &quot;D:\home\site\repository&quot;" /><!-- duration: 266ms -->
+      </step><!-- duration: 281ms -->
+      <step title="Writing 183 bytes" date="2015-09-27T23:31:30.206" /><!-- duration: 0ms -->
+    </step><!-- duration: 861ms -->
+  </step><!-- duration: 908ms -->
+  <step title="Outgoing response" date="2015-09-27T23:31:30.222" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" x-ms-request-id="6e990e6c-d6d4-4e15-bd35-397db36f13dd" Pragma="no-cache" Cache-Control="must-revalidate, no-cache, max-age=0" Expires="Tue, 01 Jan 1980 00:00:00 GMT" Content-Length="183" X-AspNet-Version="4.0.30319" Content-Type="application/x-git-receive-pack-advertisement" /><!-- duration: 16ms -->
+</step><!-- duration: 986ms -->

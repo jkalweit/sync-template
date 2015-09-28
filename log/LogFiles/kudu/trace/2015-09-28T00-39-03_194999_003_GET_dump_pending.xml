@@ -1,0 +1,2 @@
+<step title="Incoming Request" date="2015-09-28T00:39:03.714" instance="194999" url="/dump" method="GET" type="request" pid="4312,2,8" Connection="Keep-Alive" Content-Length="0" Accept-Charset="UTF-8" Host="synctodo.scm.azurewebsites.net" User-Agent="WindowsAzureXplatCLI/0.9.9" X-SITE-DEPLOYMENT-ID="synctodo" >
+  <step title="ZipStreamContent.OnZip" date="2015-09-28T00:39:04.074" 

@@ -1,0 +1,20 @@
+<step title="Executing external process" date="2015-09-27T23:32:13.999" instance="194999" type="process" path="kudu.exe" arguments="D:\home\site C:\Program Files (x86)\SiteExtensions\Kudu\48.40922.1823\msbuild" >
+  <step title="DeploymentManager.Deploy(id)" date="2015-09-27T23:32:14.108" >
+    <step title="Collecting changeset information" date="2015-09-27T23:32:14.108" /><!-- duration: 63ms -->
+    <step title="Updating to specific changeset" date="2015-09-27T23:32:14.171" /><!-- duration: 20015ms -->
+    <step title="Updating submodules" date="2015-09-27T23:32:34.186" /><!-- duration: 48ms -->
+    <step title="Determining deployment builder" date="2015-09-27T23:32:34.317" >
+      <step title="Builder is NodeSiteBuilder" date="2015-09-27T23:32:35.780" /><!-- duration: 0ms -->
+    </step><!-- duration: 1478ms -->
+    <step title="Copying SSH keys" date="2015-09-27T23:32:35.811" /><!-- duration: 0ms -->
+    <step title="Building" date="2015-09-27T23:32:35.811" >
+      <step title="Generating deployment script" date="2015-09-27T23:32:35.858" >
+        <step title="Executing external process" date="2015-09-27T23:32:35.906" type="process" path="starter.cmd" arguments="&quot;c:\Program Files (x86)\SiteExtensions\Kudu\48.40922.1823\bin\node_modules\.bin\kuduscript.cmd&quot; -y --no-dot-deployment -r &quot;D:\home\site\repository&quot; -o &quot;D:\home\site\deployments\tools&quot; --node --sitePath &quot;D:\home\site\repository&quot;" /><!-- duration: 249ms -->
+        <step title="Saved cached version of the deployment script for command -y --no-dot-deployment -r &quot;D:\home\site\repository&quot; -o &quot;D:\home\site\deployments\tools&quot; --node --sitePath &quot;D:\home\site\repository&quot;" date="2015-09-27T23:32:36.155" /><!-- duration: 0ms -->
+      </step><!-- duration: 297ms -->
+      <step title="Executing external process" date="2015-09-27T23:32:36.219" type="process" path="starter.cmd" arguments="&quot;D:\home\site\deployments\tools\deploy.cmd&quot;" /><!-- duration: 31696ms -->
+    </step><!-- duration: 32266ms -->
+  </step><!-- duration: 53968ms -->
+  <step title="Cleaning up temp files" date="2015-09-27T23:33:08.077" /><!-- duration: 16ms -->
+  <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2015-09-27T23:33:08.124" /><!-- duration: 234ms -->
+</step><!-- duration: 54484ms -->

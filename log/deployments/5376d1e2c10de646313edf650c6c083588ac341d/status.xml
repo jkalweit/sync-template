@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deployment>
+  <id>5376d1e2c10de646313edf650c6c083588ac341d</id>
+  <author>Justin Kalweit</author>
+  <deployer>jkalweit</deployer>
+  <authorEmail>kalweit@alumni.duke.edu</authorEmail>
+  <message>Add node version for Aqure
+</message>
+  <progress></progress>
+  <status>Success</status>
+  <statusText></statusText>
+  <lastSuccessEndTime>2015-09-27T23:33:07.9779055Z</lastSuccessEndTime>
+  <receivedTime>2015-09-27T23:32:14.1402188Z</receivedTime>
+  <startTime>2015-09-27T23:32:34.2991423Z</startTime>
+  <endTime>2015-09-27T23:33:07.9779055Z</endTime>
+  <complete>True</complete>
+  <is_temp>False</is_temp>
+  <is_readonly>False</is_readonly>
+</deployment>

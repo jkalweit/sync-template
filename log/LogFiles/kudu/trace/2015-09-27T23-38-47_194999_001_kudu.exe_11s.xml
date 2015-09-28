@@ -1,0 +1,19 @@
+<step title="Executing external process" date="2015-09-27T23:38:47.460" instance="194999" type="process" path="kudu.exe" arguments="D:\home\site C:\Program Files (x86)\SiteExtensions\Kudu\48.40922.1823\msbuild" >
+  <step title="DeploymentManager.Deploy(id)" date="2015-09-27T23:38:47.538" >
+    <step title="Collecting changeset information" date="2015-09-27T23:38:47.554" /><!-- duration: 47ms -->
+    <step title="Updating to specific changeset" date="2015-09-27T23:38:47.616" /><!-- duration: 1506ms -->
+    <step title="Updating submodules" date="2015-09-27T23:38:49.137" /><!-- duration: 33ms -->
+    <step title="Determining deployment builder" date="2015-09-27T23:38:49.250" >
+      <step title="Builder is NodeSiteBuilder" date="2015-09-27T23:38:50.398" /><!-- duration: 0ms -->
+    </step><!-- duration: 1148ms -->
+    <step title="Copying SSH keys" date="2015-09-27T23:38:50.413" /><!-- duration: 17ms -->
+    <step title="Building" date="2015-09-27T23:38:50.430" >
+      <step title="Generating deployment script" date="2015-09-27T23:38:50.478" >
+        <step title="Using cached version of the deployment script for command: -y --no-dot-deployment -r &quot;D:\home\site\repository&quot; -o &quot;D:\home\site\deployments\tools&quot; --node --sitePath &quot;D:\home\site\repository&quot;" date="2015-09-27T23:38:50.540" /><!-- duration: 16ms -->
+      </step><!-- duration: 94ms -->
+      <step title="Executing external process" date="2015-09-27T23:38:50.650" type="process" path="starter.cmd" arguments="&quot;D:\home\site\deployments\tools\deploy.cmd&quot;" /><!-- duration: 7310ms -->
+    </step><!-- duration: 7710ms -->
+  </step><!-- duration: 10617ms -->
+  <step title="Cleaning up temp files" date="2015-09-27T23:38:58.155" /><!-- duration: 0ms -->
+  <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2015-09-27T23:38:58.171" /><!-- duration: 219ms -->
+</step><!-- duration: 11070ms -->

@@ -1,0 +1,21 @@
+2015-09-27T23:38:47.6789998Z,Updating branch 'master'.,da1de0f0-e5f1-4041-922f-0b1ac426d8e0,0
+2015-09-27T23:38:49.1709380Z,Updating submodules.,a744611a-a0fa-4a26-b07e-6bf340f156f8,0
+2015-09-27T23:38:49.2178544Z,Preparing deployment for commit id '75f435b360'.,a65fdcf0-d336-42c6-9e40-d2a4a0a7bfe2,0
+2015-09-27T23:38:50.4625239Z,Generating deployment script.,2d89aff1-1f68-4e8d-a486-c9d7a5d73394,0
+	2015-09-27T23:38:50.5718967Z,Using cached version of deployment script (command: 'azure -y --no-dot-deployment -r "D:\home\site\repository" -o "D:\home\site\deployments\tools" --node --sitePath "D:\home\site\repository"').,,0
+2015-09-27T23:38:50.6187762Z,Running deployment command...,9517d823-dbf7-4189-b5d6-7a971891af7c,0
+	2015-09-27T23:38:50.6187762Z,Command: "D:\home\site\deployments\tools\deploy.cmd",,0
+	2015-09-27T23:38:51.6631043Z,Handling node.js deployment.,,0
+	2015-09-27T23:38:53.4597271Z,KuduSync.NET from: 'D:\home\site\repository' to: 'D:\home\site\wwwroot',,0
+	2015-09-27T23:38:53.4753104Z,Copying file: 'IISNode.yml',,0
+	2015-09-27T23:38:53.6159341Z,Looking for app.js/server.js under site root.,,0
+	2015-09-27T23:38:53.6159341Z,Missing server.js/app.js files&comma; web.config is not generated,,1
+	2015-09-27T23:38:53.6471833Z,Node.js versions available on the platform are: 0.6.17&comma; 0.6.20&comma; 0.8.2&comma; 0.8.19&comma; 0.8.26&comma; 0.8.27&comma; 0.8.28&comma; 0.10.5&comma; 0.10.18&comma; 0.10.21&comma; 0.10.24&comma; 0.10.26&comma; 0.10.28&comma; 0.10.29&comma; 0.10.31&comma; 0.10.32&comma; 0.12.0&comma; 0.12.2&comma; 0.12.3&comma; 0.12.6&comma; 4.0.0&comma; 4.1.0.,,0
+	2015-09-27T23:38:53.6628161Z,Selected node.js version 0.12.6. Use package.json file to choose a different version.,,0
+	2015-09-27T23:38:53.6784406Z,Updating iisnode.yml at D:\home\site\wwwroot\iisnode.yml,,0
+	2015-09-27T23:38:55.2721630Z,npm WARN package.json investmentclub@1.0.0 No description,,1
+	2015-09-27T23:38:55.2877864Z,npm WARN package.json investmentclub@1.0.0 No repository field.,,1
+	2015-09-27T23:38:55.3034129Z,npm WARN package.json investmentclub@1.0.0 No README data,,1
+	2015-09-27T23:38:55.3034129Z,npm WARN package.json investmentclub@1.0.0 No license field.,,1
+	2015-09-27T23:38:57.9604503Z,Finished successfully.,,0
+2015-09-27T23:38:58.0240951Z,Deployment successful.,637f4a13-3563-40fc-86e9-70fba70671f7,0
