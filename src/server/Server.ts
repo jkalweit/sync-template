@@ -26,8 +26,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var io = socketio(server);
 
 var defaultData = {
-	todos: {
-		'0': { key: '0', text: 'A default todo!', isComplete: false }		
+	lists: {
+		'0': {
+			key: '0',
+			text: 'Grocery',
+			todos: {
+				'0': { key: '0', text: 'Milk', isComplete: false }		
+			}
+		}
 	}
 }
 
