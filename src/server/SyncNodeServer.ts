@@ -36,7 +36,10 @@ export class SyncNodeServer {
 		this.persistence = new Persistence.FilePersistence(namespace, 'data');
 
 		this.persistence.get((data: any) => {
-			this.data = data || defaultData;
+			this.data = data;
+			if(!this.data) {
+				this.data = JSON.parse(JSON.stringify(defaultData)); // Use a copy for immutability
+			}
 			this.start();
 		});
 	}
@@ -66,6 +69,11 @@ export class SyncNodeServer {
 	persist() {
 		this.persistence.persist(this.data);
 	}
+	resetData(newData: any) {
+		this.data = JSON.parse(JSON.stringify(newData)); // Use a copy for immutability
+		this.persistence.persist(this.data);
+		this.ioNamespace.emit('latest', this.data);
+	}
 	start() {
 		this.ioNamespace = this.io.of('/' + this.namespace);
 		this.ioNamespace.on('connection', (socket: SocketIO.Socket) => {
@@ -84,7 +92,8 @@ export class SyncNodeServer {
 
 
 			socket.on('update', (request: Request) => {
-				var merge = request.data;this.doMerge(this.data, merge);
+				var merge = request.data;
+				this.doMerge(this.data, merge);
 				this.persist();
 				socket.emit('updateResponse', new Response(request.requestGuid, null));
 				socket.broadcast.emit('update', merge);

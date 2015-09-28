@@ -29,7 +29,12 @@ var defaultData = {
 var syncServer = new Sync.SyncNodeServer('todos', io, defaultData);
 app.use('/', express.static(path.join(__dirname, '../client/')));
 app.use('/bower_components', express.static(path.join(__dirname, '../../bower_components')));
-console.log('path', path.join(__dirname, '../client/'));
+// using this for debugging...
+app.get('/todos/reset', function (req, res) {
+    syncServer.resetData(defaultData);
+    res.send('Reset.');
+});
+// console.log('path', path.join(__dirname, '../client/'));
 var port = process.env.PORT || 1337;
 server.listen(port, function () {
     console.log('Express is listening on %s:%s', server.address().address, server.address().port);

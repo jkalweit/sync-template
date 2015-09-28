@@ -16,7 +16,10 @@ var SyncNodeServer = (function () {
         this.io = io;
         this.persistence = new Persistence.FilePersistence(namespace, 'data');
         this.persistence.get(function (data) {
-            _this.data = data || defaultData;
+            _this.data = data;
+            if (!_this.data) {
+                _this.data = JSON.parse(JSON.stringify(defaultData)); // Use a copy for immutability
+            }
             _this.start();
         });
     }
@@ -42,6 +45,11 @@ var SyncNodeServer = (function () {
     };
     SyncNodeServer.prototype.persist = function () {
         this.persistence.persist(this.data);
+    };
+    SyncNodeServer.prototype.resetData = function (newData) {
+        this.data = JSON.parse(JSON.stringify(newData)); // Use a copy for immutability
+        this.persistence.persist(this.data);
+        this.ioNamespace.emit('latest', this.data);
     };
     SyncNodeServer.prototype.start = function () {
         var _this = this;
